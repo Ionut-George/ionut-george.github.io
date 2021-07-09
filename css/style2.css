@@ -1,0 +1,150 @@
+/*----------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+    border: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    --color1: #1E212D;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/*----------------------------------------------------*/
+
+.header {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.hero {
+    padding-top: 60px;
+    /*background-color: aquamarine;*/
+}
+
+.middle {
+    color: black;
+    /*background-color: blanchedalmond;*/
+}
+
+.footer {
+    background-color: var(--color1);
+    color: white;
+    margin-top: 10px;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*----------------------------------------------------*/
+
+.logo {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    float: left;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-align: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 0 10px 0 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+.contact {
+    background-color: antiquewhite;
+}
+
+.nav ul li a:hover {
+    background-color: aquamarine;
+}
+
+
+/*----------------------------------------------------*/
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col2 {
+    width: 49%;
+    float: left;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+
+/*----------------------------------------------------*/
+
+.col3 {
+    width: 33%;
+    float: left;
+    text-align: center;
+    background-color: lightblue;
+    min-height: 300px;
+    margin: 2px;
+}
+
+.col3 h2,
+.col3 p,
+.col4 h3,
+.col4 p {
+    padding: 10px;
+}
+
+.col4 {
+    width: 24%;
+    float: left;
+    text-align: center;
+}
+
+
+/*----------------------------------------------------*/
+
+
+/*----------------------------------------------------*/
