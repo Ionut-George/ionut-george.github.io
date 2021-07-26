@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .slide1 {
+        position: fixed;
+        background-color: antiquewhite;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .slide2 {
+        position: fixed;
+        background-color: aquamarine;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .center {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    .col {
+        width: 50%;
+    }
+    
+    form {
+        position: absolute;
+        right: 0;
+        margin-right: 100px;
+        display: grid;
+        place-items: center;
+        height: 100%;
+    }
+    
+    input[type=button] {
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    
+    input[type=button]:hover {
+        background-color: blue;
+    }
+</style>
+
+<body>
+    <div class="slide1" id="slide1">
+        <p class="center">hello</p>
+        <div style="width:500px; height:500px;border:2px solid; display: flex;">
+            <p style="display: grid; place-content: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo minima aut vel! Dicta ullam magni iste debitis pariatur explicabo non autem provident. Doloribus laboriosam voluptatum ullam fuga at. Harum, deserunt!</p>
+        </div>
+    </div>
+    <div class="slide2" id="slide2">
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet numquam, est incidunt maxime, nobis libero magnam perferendis mollitia laudantium natus eum tempore eaque ab error illo hic quisquam. Sed, aliquam!</p>
+            </div>
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet numquam, est incidunt maxime, nobis libero magnam perferendis mollitia laudantium natus eum tempore eaque ab error illo hic quisquam. Sed, aliquam!</p>
+            </div>
+        </div>
+    </div>
+    <form action="" class="">
+        <input type="button" onclick="abc()">
+        <input type="button" onclick="abc()">
+        <input type="button" onclick="abc()">
+    </form>
+</body>
+<script>
+    let a = document.getElementById('slide2');
+    let b = document.getElementById('slide1');
+    a.style.display = "none";
+    b.style.display = "";
+
+    function abc() {
+        if (a.style.display == "none") {
+            a.style.display = "";
+            b.style.display = "none";
+        } else {
+            a.style.display = "none";
+            b.style.display = "";
+        }
+    }
+</script>
+
+</html>
